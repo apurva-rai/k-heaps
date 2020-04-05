@@ -1,0 +1,12 @@
+adam,conner,22
+peyton,barber,1
+john,kenny,23
+tevin,coleman,10
+royce,freeman,2
+derrius,guice,15
+chris,thompson,14
+dan,harris,21
+damien,harris,5
+duke,johnson,9
+rashaad,penny,28
+austin,ekeler,4

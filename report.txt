@@ -1,0 +1,8 @@
+1.Explain why it is advantageous to use priority heaps in hospital management systems.
+It is advantageous to use priority heaps in hospital management systems because the important information like critical patients(at the top of max-heaps according to intensity) and doctors that are available(at the top of min-heaps according to patients assigned) can be accessed quickly and easily. Updating them is also very easy.
+
+2.Explain a few features which should be incorporated into the hospital patient and doctor management system for the system to be useful in an actual (i.e., real-world hospital) for managing emergency room patient cases.
+First both the systems should be linked and update dynamically when either the doctor or patient system is accessed. One could add a feature of k-top least occupied doctors who will be contacted in case of emergency room patient cases since they are least likely to be occupied(only if they do not have a doctor assigned or if assigned doctor is busy).
+
+3.If we need to apply priority heaps in product recommendations (based on features or product ratings), how can we apply them?
+The most intuitive way to apply priority heaps in this case is to make a max k-heap with the rating as a comparison key so that the higher rated product recommendation goes on top therefore being displayed first.

@@ -1,0 +1,5 @@
+Everything is working as described in the lab manual.
+There were some input and output inaccuracies in the lab manual description but they work correctly in my program.
+I have made a more elaborate function for increasing and decreasing the patient count for doctors since the one described in the function description is not what is executed in the example.
+No memory leaks and no errors.
+make and run as "lab7"
