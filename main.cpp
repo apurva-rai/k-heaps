@@ -259,7 +259,11 @@ int main(int argc, char* argv[])
       newDoc->lastName = last;
       newDoc->assigned = num;
 
-      addDoctor(newDoc);
+      doctorArraySize++;
+      doctorArray.resize(doctorArraySize);
+      doctorArray[doctorArraySize-1] = newDoc;
+
+      //addDoctor(newDoc);
 
       }
 
@@ -305,9 +309,16 @@ int main(int argc, char* argv[])
       newP->lastName = last;
       newP->urgency = num;
 
-      addPatient(newP);
+      patientArraySize++;
+      patientArray.resize(patientArraySize);
+      patientArray[patientArraySize-1] = newP;
+
+      //addPatient(newP);
 
       }
+
+      minHeapSort();
+      maxHeapSort();
 
       int option=0;
 
@@ -359,7 +370,13 @@ int main(int argc, char* argv[])
               cout << ">Enter patients urgency:\n>";
       				cin >> tempP->urgency;
               if(addPatient(tempP)) cout << ">New patient record added.\n";
-              else cout << ">Patient was not added.\n";
+              else
+              {
+
+                cout << ">Patient was not added.\n";
+                delete tempP;
+
+              }
 
             }
             else if(option == 2)
@@ -501,7 +518,7 @@ int main(int argc, char* argv[])
 
               }
 
-              for(int j = 0; j < patientArraySize; j++)
+              for(int j = 0; j < (int)(tempArray.size()); j++)
               {
 
                 delete tempArray[j];
